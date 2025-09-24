@@ -1,0 +1,33 @@
+{
+  "name": "@secretary-agent/lm-core",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AcrylicShrimp/secretary-agent.git",
+    "directory": "libs/lm-core"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "prepare": "ts-patch install"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "main": "src/lib.ts",
+  "publishConfig": {
+    "main": "dist/lib.js",
+    "types": "dist/lib.d.ts"
+  },
+  "devDependencies": {
+    "@types/node": "catalog:",
+    "ts-patch": "catalog:",
+    "typescript": "catalog:"
+  },
+  "dependencies": {
+    "openai": "catalog:",
+    "typia": "catalog:"
+  }
+}

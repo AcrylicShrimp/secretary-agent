@@ -1,0 +1,19 @@
+{
+  "name": "@secretary-agent",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Your daily AI secretary.",
+  "scripts": {
+    "build": "pnpm --filter @secretary-agent/* build"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "catalog:",
+    "eslint": "catalog:",
+    "prettier": "catalog:",
+    "ts-node": "catalog:",
+    "typescript": "catalog:",
+    "typescript-eslint": "catalog:",
+    "vitest": "catalog:"
+  },
+  "packageManager": "pnpm@10.12.2"
+}
