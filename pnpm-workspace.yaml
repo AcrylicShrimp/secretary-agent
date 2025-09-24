@@ -3,14 +3,19 @@ packages:
   - libs/*
 
 catalog:
-  '@trivago/prettier-plugin-sort-imports': ^5.2.2
-  '@types/node': ^22.15.30
+  "@trivago/prettier-plugin-sort-imports": ^5.2.2
+  "@types/node": ^22.15.30
+  date-fns: ^4.1.0
   eslint: ^9.36.0
+  openai: ^5.12.2
   prettier: ^3.6.2
-  ts-node: ^10.9.2
+  rxjs: ^7.8.2
   ts-patch: ^3.3.0
+  tsx: ^4.20.5
   typescript: ^5.9.2
   typescript-eslint: ^8.44.1
-  openai: ^5.12.2
   typia: ^9.3.1
   vitest: ^3.2.4
+
+ignoredBuiltDependencies:
+  - esbuild

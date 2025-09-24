@@ -1,10 +1,10 @@
 {
-  "name": "@secretary-agent/lm-core",
+  "name": "@secretary-agent/message-storage",
   "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/AcrylicShrimp/secretary-agent.git",
-    "directory": "libs/lm-core"
+    "directory": "libs/message-storage"
   },
   "scripts": {
     "build": "tsc",
@@ -27,7 +27,6 @@
     "typescript": "catalog:"
   },
   "dependencies": {
-    "openai": "catalog:",
     "typia": "catalog:"
   }
 }

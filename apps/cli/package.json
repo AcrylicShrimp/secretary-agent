@@ -1,10 +1,10 @@
 {
-  "name": "@secretary-agent/lm-core",
+  "name": "@secretary-agent/cli",
   "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/AcrylicShrimp/secretary-agent.git",
-    "directory": "libs/lm-core"
+    "directory": "app/cli"
   },
   "scripts": {
     "build": "tsc",
@@ -16,10 +16,16 @@
     "dist",
     "README.md"
   ],
-  "main": "src/lib.ts",
+  "main": "src/main.ts",
+  "bin": {
+    "secretary-agent": "src/main.ts"
+  },
   "publishConfig": {
-    "main": "dist/lib.js",
-    "types": "dist/lib.d.ts"
+    "main": "dist/main.js",
+    "types": "dist/main.d.ts",
+    "bin": {
+      "secretary-agent": "dist/main.js"
+    }
   },
   "devDependencies": {
     "@types/node": "catalog:",
@@ -27,7 +33,11 @@
     "typescript": "catalog:"
   },
   "dependencies": {
+    "@secretary-agent/message-storage": "workspace:*",
+    "@secretary-agent/lm-core": "workspace:*",
+    "date-fns": "catalog:",
     "openai": "catalog:",
+    "rxjs": "catalog:",
     "typia": "catalog:"
   }
 }

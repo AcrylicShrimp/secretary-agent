@@ -4,16 +4,17 @@
   "version": "0.1.0",
   "description": "Your daily AI secretary.",
   "scripts": {
-    "build": "pnpm --filter @secretary-agent/* build"
+    "build": "pnpm --filter @secretary-agent/* build",
+    "cli": "pnpm exec secretary-agent"
   },
   "devDependencies": {
+    "@secretary-agent/cli": "workspace:*",
     "@trivago/prettier-plugin-sort-imports": "catalog:",
     "eslint": "catalog:",
     "prettier": "catalog:",
-    "ts-node": "catalog:",
+    "tsx": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
     "vitest": "catalog:"
-  },
-  "packageManager": "pnpm@10.12.2"
+  }
 }
